@@ -1,0 +1,162 @@
+import {StyleSheet} from 'react-native';
+import {COLOR, FONT, commonStyles} from '../../themes/StyleGuides';
+
+const styles = StyleSheet.create({
+  container: {
+    ...commonStyles.mainContainer,
+  },
+  titleStyle: {
+    fontSize: 24,
+    fontFamily: FONT.Montserrat_Bold,
+    color: COLOR.black,
+    marginLeft: '6%',
+  },
+  AddButtonStyle: {
+    width: '35%',
+    height: 21,
+    backgroundColor: COLOR.primary,
+    borderRadius: 17,
+    ...commonStyles.center,
+    alignSelf: 'center',
+  },
+  PlusText: {fontSize: 12, bottom: 4, color: COLOR.white},
+  balanceText: {
+    fontSize: 20,
+    fontFamily: FONT.Montserrat_Bold,
+    color: COLOR.DarkGray_2,
+    marginLeft: '5%',
+    marginTop: '5%',
+  },
+  balanceContainer: {
+    ...commonStyles.horizontalView,
+    marginTop: '1%',
+    paddingHorizontal: '5%',
+  },
+  balance: {
+    fontSize: 30,
+    fontFamily: FONT.Inter_Bold,
+    color: COLOR.black,
+    marginLeft: '3%',
+  },
+
+  AddButton: {
+    width: '35%',
+    height: 21,
+    backgroundColor: COLOR.primary,
+    borderRadius: 17,
+    ...commonStyles.verticleView,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    paddingHorizontal: '3%',
+  },
+  SmallText: {fontSize: 20, fontFamily: FONT.Inter_Bold, color: COLOR.black},
+  addText: {
+    fontSize: 12,
+    fontFamily: FONT.Inter_Regular,
+    color: COLOR.white,
+    right: 25,
+  },
+  addIcon: {width: 12, height: 12, resizeMode: 'contain', alignSelf: 'center'},
+  MoneyIcon: {width: 33, height: 33, resizeMode: 'contain'},
+  ListAddMoneyConatin: {
+    borderBottomColor: COLOR.black,
+    borderBottomWidth: 1,
+    height: 100,
+  },
+  ListTitlAndButtonView: {...commonStyles.verticleView},
+  buttonAddMoney: {
+    height: 24,
+    backgroundColor: COLOR.primary,
+    borderRadius: 5,
+    ...commonStyles.center,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    paddingHorizontal: '3%',
+    marginRight: '6%',
+  },
+  AddMoneyText: {
+    fontSize: 12,
+    fontFamily: FONT.Inter_Regular,
+    color: COLOR.white,
+    marginLeft: '2%',
+  },
+  LocationButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: COLOR.primary,
+    ...commonStyles.center,
+    marginRight: '5%',
+  },
+  locationIcon: {
+    width: 20,
+    height: 20,
+    resizeMode: 'center',
+    tintColor: COLOR.white,
+  },
+  mainTitleCOntainer: {...commonStyles.verticleView},
+  slidingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  slidingPanel: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: 250, // Adjust the height as needed
+    backgroundColor: '#F3F3F3',
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  enterAmoutninput: {
+    borderWidth: 2,
+    borderColor: '#494949',
+    borderRadius: 5,
+    width: '100%',
+    height: 40,
+    paddingHorizontal:"5%",
+    color:COLOR.black
+  },
+  DoneOrCencalBtn:{
+    backgroundColor: COLOR.primary,
+    paddingVertical: 10,
+    borderRadius: 5,
+    width: '40%',
+    alignItems: 'center',
+    alignSelf: 'center',
+    marginTop: 20,
+  },
+  InstantTransferBtn:{
+    backgroundColor: COLOR.primary,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    marginLeft: 20,
+    borderRadius: 5,
+  },
+  inputTextContainer:{...commonStyles.verticleView,paddingHorizontal:"5%"},
+  SheetBtn:{
+    backgroundColor: COLOR.primary,
+    paddingVertical: 10,
+    borderRadius: 5,
+    width: '70%',
+    alignItems: 'center',
+    alignSelf: 'center',
+    marginTop: 20,
+  },
+  SheetContainer: {
+    width: '20%',
+    height: 5,
+    backgroundColor: '#5C5C5C',
+    borderRadius: 5,
+    alignSelf: 'center',
+    marginTop: 20,
+    marginBottom: 20,
+  }
+});
+
+export default styles;
